@@ -1,0 +1,21 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template index</title>
+    </head>
+
+    <body>
+        <h1>Hola mundo desde Django</h1>
+        <h2>Ahora con un template!</h2>
+        <p>Este framework es uno de mis favoritos</p>
+        {% extends 'base.html'%}
+        {% block content %}
+            <h2>Hola mundo desde django</h2>
+            <h3>Con templates</h3>
+            {{request.user}}
+            <br>
+            {{request.user.is_authenticated}}
+        {% endblock %}
+    </body>
+</html>
