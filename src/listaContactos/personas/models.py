@@ -4,4 +4,4 @@ from django.db import models
 class Persona(models.Model):
     nombres = models.CharField()
     apellidos = models.CharField()
-    edad = models.IntegerField()
+    edad = models.TextField()
